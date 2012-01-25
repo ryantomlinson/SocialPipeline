@@ -3,9 +3,11 @@
 *.user
 *.suo
 *ReSharper*
+./ReSharper*
 _ReSharper.*
 */bin
 */obj
+*.pdb
 *.resharper.user
 *.suo
 *.bak
@@ -14,3 +16,4 @@ _ReSharper.*
 *.zip
 *.chm
 *.nupkg
+Thumbs.db
