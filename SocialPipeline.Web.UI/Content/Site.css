@@ -1,0 +1,469 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    /*background-color: #5c87b2;*/
+    background: url('Images/sp_background.png') repeat scroll 0 0 #F1F1F1;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+a:link {
+    color: #2BA09E ;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2BA09E ;
+}
+
+a:hover {
+    color: #66CCCC ;
+    text-decoration: none;
+}
+
+a:active {
+    color: #2BA09E ;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td {
+    border: 0px;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+}
+
+footer, 
+#footer {
+    background-color: #fff;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul.menu {
+    /*border-bottom: 1px #5C87B2 solid;*/
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+}
+
+.menu_main {
+    float: left;
+    width: 50%;
+}
+
+.menu_admin {
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+ul.menu li {
+    display: inline;
+    list-style: none;
+}
+
+ul.menu li#greeting {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul.menu li a {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #2BA09E;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+ul.menu li a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul.menu li a:active {
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul.menu li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+}
+
+#grid table {
+    width: 100%;
+}
+
+table.full_width {
+    width: 100%;
+}
+
+table.full_width td.left_cell {
+    width: 350px;
+    max-width: 350px;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+    clear: both;
+    height: 40px;
+    width: 100%;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: #777777;
+}
+
+#logindisplay a:link {
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+/* Link buttons
+----------------------------------------------------------*/
+
+.pure {
+	/*letter-spacing: 1px;*/
+	display: inline-block;
+	padding: 0.5em 3em;
+	background-color: rgb(0,62,155);
+	color: rgb(238,238,238) !important;
+	text-decoration: none;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25), rgba(255,255,255,0.05)); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.25)),color-stop(1, rgba(255,255,255,0.05))); /* Saf4+, Chrome */
+	/*text-shadow: rgb(68,68,68) 0 -1px 1px;*/
+	box-shadow: 1px 1px 3px rgba(68,68,68,0.3);
+	-webkit-box-shadow: 1px 1px 3px rgba(136,136,136,0.3);
+	-moz-box-shadow: 1px 1px 3px rgba(68,68,68,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.pure:hover {
+	/*background-color: rgb(0,62,215);*/    
+	text-shadow: rgb(238,238,238) 0 0 2px;
+	-webkit-transition: all 0.3s linear;
+}
+
+.pure:active {
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.05)),color-stop(1, rgba(255,255,255,0.25))); /* Saf4+, Chrome */
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.green {
+    background-color:rgb(0,159,55)
+}
+
+
+#add_user {
+    padding: 0 0 10px;
+    text-align: right;
+}
+
+
+/* Used for the Switch effect: */
+.cb-enable, .cb-disable, .cb-enable span, .cb-disable span { background: url(Images/Elements/switch.gif) repeat-x; display: block; float: left; }
+.cb-enable span, .cb-disable span { line-height: 30px; display: block; background-repeat: no-repeat; font-weight: bold; }
+.cb-enable span { background-position: left -90px; padding: 0 10px; }
+.cb-disable span { background-position: right -180px;padding: 0 10px; }
+.cb-disable.selected { background-position: 0 -30px; }
+.cb-disable.selected span { background-position: right -210px; color: #fff; }
+.cb-enable.selected { background-position: 0 -60px; }
+.cb-enable.selected span { background-position: left -150px; color: #fff; }
+.switch label { cursor: pointer; }
+.switch { display: block; height: 30px; }
+
+ul#tab_menu 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#tab_menu li {
+    border: 1px solid black;
+    display: inline;
+    padding: 4px;   
+}
+
+#tab_contents {
+    border: 1px solid black;
+}

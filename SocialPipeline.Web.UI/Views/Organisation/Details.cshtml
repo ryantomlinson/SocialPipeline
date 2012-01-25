@@ -1,0 +1,33 @@
+﻿@using SocialPipeline.Services.Models.Helpers
+@model SocialPipeline.Web.ViewModels.Organisations.OrganisationDetailsViewModel
+
+<table class="full_width">
+    <tbody>
+        <tr>
+            <td class="left_cell">
+                <div id="left_column">
+                    @Html.Partial("_OrganisationDetail", Model)
+                </div>
+            </td>
+            <td>
+                <div id="right_column">
+                    <ul id="tab_menu">
+                        <li>@Html.ActionLink("Updates", "Details", new{ id = Model.Organisation.Id, tab = OrganisationAssociation.Updates })</li>
+                        <li>@Html.ActionLink("People", "Details", new{ id = Model.Organisation.Id, tab = OrganisationAssociation.People })</li>
+                        <li>@Html.ActionLink("Deals", "Details", new{ id = Model.Organisation.Id, tab = OrganisationAssociation.Deals })</li>
+                    </ul>
+                    <div id="tab_contents">
+                        @{
+                            if (Model.HasPeople)
+                            {
+                                @Html.Partial("_People")
+                            }
+                        }
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

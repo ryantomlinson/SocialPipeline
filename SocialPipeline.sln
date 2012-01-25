@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Web.UI", "SocialPipeline.Web.UI\SocialPipeline.Web.UI.csproj", "{5C621D39-DC11-4C3D-900F-742DA383C0D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SocialPipeline.Data", "SocialPipeline.Data", "{C5BC5DAF-EA14-448C-85FB-7F2CF69BBB46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SocialPipeline.Services", "SocialPipeline.Services", "{41346B0C-41EA-4E56-AC4C-73F1FAC70EE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SocialPipeline.Web", "SocialPipeline.Web", "{50A57C58-2067-434C-925A-67121D69381F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Services.Models", "SalesPipeline.Services.Models\SocialPipeline.Services.Models.csproj", "{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Data.Dal", "SalesPipeline.Data.Dal\SocialPipeline.Data.Dal.csproj", "{977531CD-551B-4E24-9A84-4165A0C1173A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Data.Common", "SalesPipeline.Data.Common\SocialPipeline.Data.Common.csproj", "{9F25FFC9-EC97-485C-911B-AD78656A644E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SocialPipeline.Configuration", "SocialPipeline.Configuration", "{D350C6A9-2563-428A-94C9-CBE1469A9E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Ioc", "SocialPipeline.Ioc\SocialPipeline.Ioc.csproj", "{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Services", "SalesPipeline.Services\SocialPipeline.Services.csproj", "{356CF9E2-0A50-4F20-9D07-BAE938AE563D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Web.ViewModels", "SocialPipeline.Web.ViewModels\SocialPipeline.Web.ViewModels.csproj", "{5B6E4798-C9E6-4831-87AA-61E72276E970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Services.Common", "SocialPipeline.Services.Common\SocialPipeline.Services.Common.csproj", "{5E0BA379-1F8D-4987-8A29-8F2FC741A158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialPipeline.Web.Custom", "SocialPipeline.Web.Custom\SocialPipeline.Web.Custom.csproj", "{97620903-A093-4707-8F70-EAD6983967EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C621D39-DC11-4C3D-900F-742DA383C0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C621D39-DC11-4C3D-900F-742DA383C0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C621D39-DC11-4C3D-900F-742DA383C0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C621D39-DC11-4C3D-900F-742DA383C0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977531CD-551B-4E24-9A84-4165A0C1173A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977531CD-551B-4E24-9A84-4165A0C1173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977531CD-551B-4E24-9A84-4165A0C1173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977531CD-551B-4E24-9A84-4165A0C1173A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F25FFC9-EC97-485C-911B-AD78656A644E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F25FFC9-EC97-485C-911B-AD78656A644E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F25FFC9-EC97-485C-911B-AD78656A644E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F25FFC9-EC97-485C-911B-AD78656A644E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356CF9E2-0A50-4F20-9D07-BAE938AE563D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356CF9E2-0A50-4F20-9D07-BAE938AE563D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356CF9E2-0A50-4F20-9D07-BAE938AE563D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356CF9E2-0A50-4F20-9D07-BAE938AE563D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6E4798-C9E6-4831-87AA-61E72276E970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6E4798-C9E6-4831-87AA-61E72276E970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6E4798-C9E6-4831-87AA-61E72276E970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6E4798-C9E6-4831-87AA-61E72276E970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E0BA379-1F8D-4987-8A29-8F2FC741A158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0BA379-1F8D-4987-8A29-8F2FC741A158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0BA379-1F8D-4987-8A29-8F2FC741A158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0BA379-1F8D-4987-8A29-8F2FC741A158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97620903-A093-4707-8F70-EAD6983967EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97620903-A093-4707-8F70-EAD6983967EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97620903-A093-4707-8F70-EAD6983967EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97620903-A093-4707-8F70-EAD6983967EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C621D39-DC11-4C3D-900F-742DA383C0D5} = {50A57C58-2067-434C-925A-67121D69381F}
+		{5B6E4798-C9E6-4831-87AA-61E72276E970} = {50A57C58-2067-434C-925A-67121D69381F}
+		{97620903-A093-4707-8F70-EAD6983967EF} = {50A57C58-2067-434C-925A-67121D69381F}
+		{977531CD-551B-4E24-9A84-4165A0C1173A} = {C5BC5DAF-EA14-448C-85FB-7F2CF69BBB46}
+		{9F25FFC9-EC97-485C-911B-AD78656A644E} = {C5BC5DAF-EA14-448C-85FB-7F2CF69BBB46}
+		{10BFF6BE-8B00-40AE-A6DC-A5343A0BB77A} = {41346B0C-41EA-4E56-AC4C-73F1FAC70EE9}
+		{356CF9E2-0A50-4F20-9D07-BAE938AE563D} = {41346B0C-41EA-4E56-AC4C-73F1FAC70EE9}
+		{5E0BA379-1F8D-4987-8A29-8F2FC741A158} = {41346B0C-41EA-4E56-AC4C-73F1FAC70EE9}
+		{34F706A3-BC8A-4BE3-BB91-4A0FD991F4FB} = {D350C6A9-2563-428A-94C9-CBE1469A9E5D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

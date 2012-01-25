@@ -1,0 +1,25 @@
+﻿@model SocialPipeline.Web.ViewModels.Organisations.OrganisationDetailsViewModel
+
+<div id="organisation_detail">
+    <h1>@Model.Organisation.Name</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Added By</td>
+                <td>@Model.Organisation.CreatedBy.FullName</td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>@Model.Organisation.Website</td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td>@Model.Organisation.Twitter</td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td>@Model.Organisation.Facebook</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+﻿@model SocialPipeline.Web.ViewModels.Users.UsersViewModel
+@using SocialPipeline.Web.Custom.ExtensionMethods
+
+@{
+    ViewBag.Title = "Users";
+}
+
+@{
+    var grid = new System.Web.Helpers.WebGrid(Model.Users);  
+}
+
+<h2>Users</h2>
+
+<div id="add_user">
+    @Html.ActionLink("Add User", "Add", new { controller = "Users" } , new{ @class = "pure green"})
+</div>
+
+<div id="grid">
+    @grid.GetHtml(columns: grid.Columns(  
+          grid.Column("Name", format:@<text>@item.FirstName</text>),
+          grid.Column("Email"),
+          grid.Column("RegisteredDate", format:@<text>@DateTimeExtensions.ToRelativeDateTime(item.RegisteredDate)</text>),
+          grid.Column("IsAdmin"))  
+        )  
+</div>

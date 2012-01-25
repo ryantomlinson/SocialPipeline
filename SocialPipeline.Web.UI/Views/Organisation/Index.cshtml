@@ -1,0 +1,103 @@
+﻿@model SocialPipeline.Web.ViewModels.Organisations.OrganisationsViewModel
+@using SocialPipeline.Web.Custom.ExtensionMethods
+@using SocialPipeline.Web.Custom.WebHelpers
+
+@{
+    ViewBag.Title = "Organisations";
+}
+
+@section css
+{
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.css")" rel="stylesheet" type="text/css" />
+}
+
+<h2>Organisations</h2>
+
+<div id="add_user">
+    @Html.ActionLink("Add Organisation", "Add", new { controller = "Organisation" }, new{ @class = "pure green openDialog", data_dialog_id = "orgDialog", data_dialog_title = "Add Organisation"})
+</div>
+
+<div id="orgDialog"></div>
+
+<div id="flash" class="loader"></div>
+<div id="error-message" title="Warning"></div>
+
+<script type="text/javascript">
+    
+   $(".openDialog").live("click", function (e) {
+    e.preventDefault();
+    showLoader('Adding organisation');
+
+    //load note from db and open in dialog
+    $.ajax({
+        type: "GET",
+        url: "Organisation/Add",
+        cache: false,
+        dataType: "json",
+        success: function (mynote) {
+            $("#orgDialog").html(mynote.Html);
+            $("#orgDialog").dialog({
+                resizable: true,
+                height: 210,
+                width: 510,
+                modal: true,
+                buttons: {
+                    Save: function () {
+                        var boxval = $(".organisationName").val();
+                        if (!boxval) {
+                            showError("Can't save an empty organisation");
+                            return;
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: "Organisation/Add",
+                            data: { name: boxval },
+                            cache: false,
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.Message) {
+                                    showError(data.Message);
+                                } else {
+                                    $("#grid").replaceWith(data.Html);
+                                    $("#flash").hide();
+                                    $("#orgDialog").dialog("close");
+                                }
+                            }
+                        }); //end save call
+                    }, // end ok button
+                    Cancel: function () {
+                        $("#flash").hide();
+                        $(this).dialog("close");
+                    }
+                },
+                close: function () {
+                    $("#flash").hide();
+                } //end buttons
+            }); //end modal edit
+        }
+    }); //end ajax call
+}); //end edit
+
+ function showLoader(txt) {
+    $("#flash").show();
+    var loader = '<img src="@Url.Content("~/Content/themes/base/images/ajax-loader.gif")" align="absmiddle">&nbsp;<span class="loading">' + txt + '...</span>';
+    $("#flash").fadeIn(400).html(loader);
+};
+
+function showError(messsage) {
+    $("#error-message").html(messsage);
+    $("#error-message").dialog({
+        modal: true,
+        buttons: {
+            Ok: function () {
+                $(this).dialog("close");
+            }
+        }
+    });
+};
+
+</script>
+
+<div  id="grid"> 
+        @Html.Partial("_Organisations" , Model)
+</div>

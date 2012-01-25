@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E0BA379-1F8D-4987-8A29-8F2FC741A158}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SocialPipeline.Services.Common</RootNamespace>
+    <AssemblyName>SocialPipeline.Services.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SocialPipeline.Data.Dal">
+      <HintPath>..\SocialPipeline.Web.UI\Bin\SocialPipeline.Data.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\AuthenticationException.cs" />
+    <Compile Include="Exceptions\CompanyAlreadyExistsException.cs" />
+    <Compile Include="Exceptions\FindCompanyException.cs" />
+    <Compile Include="Exceptions\OrganisationDoesNotExistException.cs" />
+    <Compile Include="Exceptions\UnableToAddOrganisationException.cs" />
+    <Compile Include="Exceptions\UnableToAddUserException.cs" />
+    <Compile Include="Exceptions\UnableToRegisterUserException.cs" />
+    <Compile Include="Exceptions\FindOrganisationException.cs" />
+    <Compile Include="Exceptions\FindUserException.cs" />
+    <Compile Include="Exceptions\LogonException.cs" />
+    <Compile Include="Exceptions\RegistrationException.cs" />
+    <Compile Include="Exceptions\UserAlreadyRegisteredException.cs" />
+    <Compile Include="Helpers\PasswordService.cs" />
+    <Compile Include="Interfaces\IDatabaseLogger.cs" />
+    <Compile Include="Interfaces\ISessionIdentity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseLoggingRepository.cs" />
+    <Compile Include="Repositories\DatabaseLogger.cs" />
+    <Compile Include="Repositories\SessionIdentity.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
