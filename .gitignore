@@ -3,3 +3,14 @@
 *.user
 *.suo
 *ReSharper*
+_ReSharper.*
+*/bin
+*/obj
+*.resharper.user
+*.suo
+*.bak
+*.sln.cache
+*.user
+*.zip
+*.chm
+*.nupkg
